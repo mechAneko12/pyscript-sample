@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>pyscript test</title>
+        <!-- ホスティングされているcss, jsを記載-->
         <link rel="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
@@ -13,9 +14,19 @@
         </py-env>
     </head>
     <body>
-        
+        <div id="plot"></div>
         <py-script>
 import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({
+    'a': ['A', 'B', 'C'],
+    'b': [10, 30, 20]
+})
+
+fig, ax = plt.subplots()
+ax.bar(df['a'], df['b'])
+pyscript.write('plot', fig)
 
         </py-script>
 
