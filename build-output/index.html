@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>pyscript test</title>
-    </head>
-    <body>
-        <h1>pyscriptのサンプル</h1>
-        <h2>例</h2>
-        <ul>
-            <li><a href="samples/sample_print.html">print関数の例</a></li>
-            <li><a href="samples/sample_library.html">外部ライブラリの使用例</a></li>
-            <li><a href="samples/sample_pyrepl.html">py-replの使用例</a></li>
-        </ul>
-        
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-community@27.1.0/dist/ag-grid-community.min.js"></script>
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/sidebar.css" rel="stylesheet">
 
-    </body>
+    <script type="text/javascript" src="static/js/sidebar.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="static/icon.png">
+    <title id="master-title">pyscript test</title>
+</head>
+<body class="close">
+    <div id="nav-toggle">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <aside id="sidebar" class="scroll">
+        <nav id="global-nav">
+            <ul>
+                <li><a href="https://github.com/mechAneko12">Github</a></li>
+                <li class="sub-menu">
+                    <a href="#" class="sub-menu-head">Link</a>
+                    <ul class="sub-menu-nav">
+                        <li><a href="https://www.mfg.t.u-tokyo.ac.jp/">MFG Lab</a></li>
+                        <li><a href="https://hab-with-a-girl.herokuapp.com/">Hit and Blow with a girl</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    
+    <div id="container">
+        <header id="global-head">
+            <h1 id="brand-logo">pyscriptのサンプル</h1>
+        </header>
+    
+        <main id="main">
+            <div class="main-visual">
+                <h1>samples</h1>
+                
+            </div>
+            <div class="samples">
+                <ul>
+                    <li><a href="samples/sample_print.html">print関数の例</a></li>
+                    <li><a href="samples/sample_library.html">外部ライブラリの使用例</a></li>
+                    <li><a href="samples/sample_pyrepl.html">py-replの使用例</a></li>
+                </ul>
+                <div>うまく表示されないときは再読み込みをなんどかしてみてください。</div>
+            </div>
+            <div class="main-visual">
+                <h1>reference</h1>
+                
+            </div>
+            <div class="samples">
+                <ul>
+                    <li><a href="https://pyscript.net/">pyscript公式</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ZniX7qbJs2E">わかりやすい解説動画</a></li>
+                    <li><a href="https://github.com/mechAneko12/pyscript-sample">このページのコード</a></li>
+                </ul>
+            </div>
+            
+        </main>
+        <div class="footer">
+            <div class="footer-text">
+                <a>© Naoki Hashimoto</a>
+            </div>
+        </div>
+    </div><!-- /#container -->
+</body>
 </html>

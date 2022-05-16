@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #9e9e9e;
+    padding: 0px 200px 0px 200px;
+    text-align: center;
+    display:flex; /* ←これを指定 */
+    align-items: center;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.footer-text {
+display: inline-block;
+margin: auto;
+}
+
+section {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+.samples {
+    margin: 50px;
+}
